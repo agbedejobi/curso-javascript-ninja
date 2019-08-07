@@ -13,42 +13,28 @@ return y?true:false;
 
 // Invoque a função criada acima, passando todos os tipos de valores `falsy`.
 isTruthy(0);
-false
 isTruthy('');
-false
 isTruthy(undefined);
-false
 isTruthy(null);
-false
 isTruthy("");
-false
 isTruthy(-0);
-false
+isTruthy(false);
+isTruthy(NaN);
 
 /*
 Invoque a função criada acima passando como parâmetro 10 valores `truthy`.
 */
 
 isTruthy(5);
-true
 isTruthy('a');
-true
 isTruthy(' ');
-true
 isTruthy(90);
-true
 isTruthy('undefined');
-true
 isTruthy('null');
-true
 isTruthy('-0');
-true
 isTruthy('0');
-true
 isTruthy(" ");
-true
 isTruthy(true);
-true
 
 /*
 Declare uma variável chamada `carro`, atribuindo à ela um objeto com as
