@@ -2,17 +2,21 @@
 Crie uma variável qualquer, que receba um array com alguns valores aleatórios
 - ao menos 5 - (fica por sua conta os valores do array).
 */
-// ?
+var anyarray = [ 'same' , null , 1995 , 'come here' , true ];
 
 /*
 Crie uma função que receba um array como parâmetro, e retorne esse array.
 */
-// ?
+function recArray (){
+
+	return [ 'samy' , false  , 'come here' , null ];
+
+};
 
 /*
 Imprima o segundo índice do array retornado pela função criada acima.
 */
-// ?
+recArray()[1]; //false
 
 /*
 Crie uma função que receba dois parâmetros: o primeiro, um array de valores; e o
@@ -20,18 +24,24 @@ segundo, um número. A função deve retornar o valor de um índice do array que
 no primeiro parâmetro. O índice usado para retornar o valor, deve ser o número passado no
 segundo parâmetro.
 */
-// ?
+
+function doisPar( val , num ){
+
+return val[num];
+
+};
+
 
 /*
 Declare uma variável que recebe um array com 5 valores, de tipos diferentes.
 */
-// ?
+var fiveValue = [ 'man' , 45 , true , 'Song' , null];
 
 /*
 Invoque a função criada acima, fazendo-a retornar todos os valores do último
 array criado.
 */
-// ?
+
 
 /*
 Crie uma função chamada `book`, que recebe um parâmetro, que será o nome do
