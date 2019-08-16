@@ -16,7 +16,7 @@ function myArray(arm){
 Imprima o segundo índice do array retornado pela função criada acima.
 */
 
-myArray(arm)[1];
+console.log ( myArray(recArray)[1] );
 
 
 /*
@@ -43,11 +43,11 @@ Invoque a função criada acima, fazendo-a retornar todos os valores do último
 array criado.
 */
 
-twoPar(meuArray , 0);
-twoPar(meuArray , 1);
-twoPar(meuArray , 2);
-twoPar(meuArray , 3);
-twoPar(meuArray , 4);
+console.log( twoPar(meuArray , 0) );
+console.log( twoPar(meuArray , 1) );
+console.log( twoPar(meuArray , 2) );
+console.log( twoPar(meuArray , 3) );
+console.log( twoPar(meuArray , 4) );
 
 /*
 Crie uma função chamada `book`, que recebe um parâmetro, que será o nome do
