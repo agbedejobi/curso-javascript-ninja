@@ -36,12 +36,11 @@ Crie uma função chamada `showTeamPosition` com as seguintes características:
 */
 function showTeamPosition(a){
 
-    var indice = a+1;
 
-return a<=4 ? 'O time que está em ' + indice + 'ºlugar é o ' + teams[a] + '.':'Não temos a informação do time que está no ' + indice +'ºlugar.';
+return  a<=5 && a>=1 ? 'O time que está em ' + a + 'ºlugar é o ' + teams[a - 1] + '.':'Não temos a informação do time que está nessa posição.';
     /*if(a <= 4) {
     
-    return 'O time que está em ' + indice + 'ºlugar é o ' + teams[a] + '.';
+    return 'O time que está em ' + a + 'ºlugar é o ' + teams[a-1] + '.';
     } else {
 
             return 'Não temos a informação do time que está nessa posição.'
@@ -53,9 +52,10 @@ return a<=4 ? 'O time que está em ' + indice + 'ºlugar é o ' + teams[a] + '.'
 Escolha 4 times do campeonato selecionado e mostre a posição dele, usando a
 função acima. Entre esses 4, adicione 1 que não esteja entre os 5 primeiros.
 */
-console.log (showTeamPosition(0));
-console.log (showTeamPosition(2));
+console.log (showTeamPosition(1));
 console.log (showTeamPosition(3));
+console.log (showTeamPosition(2));
+console.log (showTeamPosition(4));
 console.log (showTeamPosition(6));
 
 /*
@@ -85,40 +85,32 @@ Crie uma função chamada `convertToHex`, com as seguintes características:
 function convertToHex(cor) {
 
 
-var collorB = cor === 'blue'? '#0000ff' :  'Não temos o equivalente hexadecimal para ' + cor + '.';
-var collorR = cor === 'red' ? '#ff0000' : 'Não temos o equivalente hexadecimal para ' + cor + '.';
-var collorP = cor === 'black'?'#000000' : 'Não temos o equivalente hexadecimal para ' + cor + '.';
-var collorG = cor === 'pink'? '#ff69b4' : 'Não temos o equivalente hexadecimal para ' + cor + '.';
-var collorM = cor === 'brown'?'#964b00' : 'Não temos o equivalente hexadecimal para ' + cor + '.';
-
+var collor;
 
 
     switch(cor){
         case 'blue':
-        //console.log('O hexadecimal para a cor ' + cor + ' é ' + collorB +'.');
-        return 'O hexadecimal para a cor ' + cor + ' é ' + collorB +'.';
-        break;
+            collor = '#0000ff';
+            break;
         case 'red':
-        //console.log('O hexadecimal para a cor ' + cor + ' é ' + collorR +'.');
-        return 'O hexadecimal para a cor ' + cor + ' é ' + collorR +'.';
-        break;
+            collor = '#ff0000';
+            break;
         case 'black':
-        //console.log('O hexadecimal para a cor ' + cor + ' é ' + collorP +'.');
-        return 'O hexadecimal para a cor ' + cor + ' é ' + collorP +'.';
-        break;
+            collor = '#000000';
+            break;
         case 'pink':
-        //console.log('O hexadecimal para a cor ' + cor + ' é ' + collorG +'.');
-        return 'O hexadecimal para a cor ' + cor + ' é ' + collorG +'.';
-        break;
+            collor = '#ff69b4';
+            break;
         case 'brown':
-        //console.log('O hexadecimal para a cor ' + cor + ' é ' + collorM +'.');
-        return 'O hexadecimal para a cor ' + cor + ' é ' + collorM +'.';
-        break;
+            collor = '#964b00';
+            break;
         default:
         return 'Não temos o equivalente hexadecimal para ' + cor + '.';
         //console.log('Não temos o equivalente hexadecimal para ' + cor + '.');
         //console.log(collor);
     };
+
+    return 'O hexadecimal para a cor ' + cor + ' é ' + collor + '.';
 
 
 };
