@@ -50,6 +50,7 @@ true
 isTruthy(true);
 true
 
+
 /*
 Declare uma variável chamada `carro`, atribuindo à ela um objeto com as
 seguintes propriedades (os valores devem ser do tipo mostrado abaixo):
@@ -116,6 +117,7 @@ carro.obterMarcaModelo = function(){
 
 return 'Esse carro é um ' + carro.obterMarca() + ' ' + carro.obterModelo();
 };
+
 
 /*
 Crie um método que irá adicionar pessoas no carro. Esse método terá as
@@ -191,15 +193,22 @@ carro.addPessoas(2); //"Já temos 2 pessoas no carro!"
 > carro.addPessoas(3);//"Já temos 5 pessoas no carro!"
 
 
+
 // Tire 4 pessoas do carro.
 > carro.addPessoas(-4);//'Já temos 1 pessoa no carro!'
+
 
 
 // Adicione 10 pessoas no carro.
  carro.addPessoas(10);//'Só cabem mais 4 pessoas !'
 
 
+
 // Quantas pessoas temos no carro?
+<<<<<<< HEAD
 carro.quantidadePessoas;//1
 
 ```
+=======
+?
+>>>>>>> origin/challenge-07
