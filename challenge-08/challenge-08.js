@@ -58,14 +58,12 @@ vai efetuar. Será uma string com os valores `+`, `-`, `*`, `/` ou `%`;
 */
 function calculator ( a ){
 
+	//if(a === '+' || a === '-' || a === '*' || a === '/' || a === '%'){
 
-	//a==='+'? operacao = '+' : console.log('Operação inválida.');
-	if(a === '+' || a === '-' || a === '*' || a === '/' || a === '%'){
-
-		return function ( x , y) {
+	return function ( x , y) {
 
 			var resultado;
-			a === '+' ? resultado = x + y :'';
+			/*a === '+' ? resultado = x + y :'';
 			a === '-' ? resultado = x - y :'';
 			a === '*' ? resultado = x * y :'';
 			a === '/' ? resultado = x / y :'';
@@ -75,7 +73,32 @@ function calculator ( a ){
 	
 	}
 
-	return console.log('Operação inválida.');
+			a === '%' ? resultado = x % y :'';*/
+		switch( a ) {
+			case '+':
+				resultado = x + y;
+				break;
+			case '-':
+				resultado = x - y;
+				break;
+			case '*':
+				resultado = x * y;
+				break;
+			case '/':
+				resultado = x / y;
+				break;
+			case '%':
+				resultado = x % y;
+				break;
+			default:
+			return 'Operação inválida.';		
+
+		}
+
+		
+		return 'Resultado da operação: ' + x + ' ' + a  + ' ' + y + ' é = ' + resultado + '.';
+		
+	}
 
 };
 
